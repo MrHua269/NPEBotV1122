@@ -3,12 +3,8 @@ package co.m2ke4u.npebot1122wf.forgesupport;
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class MCForgeInject {
-    private static final Logger logger = LogManager.getLogger();
-
     public static boolean inject() {
         try {
             if (MCForge.isVersion1710()) {
