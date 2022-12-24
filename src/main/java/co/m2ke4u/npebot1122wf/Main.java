@@ -76,6 +76,7 @@ public class Main {
                                 ConfigManager.getCurrentConfig().getServerAddress(),
                                 ConfigManager.getCurrentConfig().getServerPort()),
                         ConfigManager.getCurrentConfig().getUsername(),
+                        ConfigManager.getCurrentConfig().getAccessToken(),
                         true);
             }else{
                 wrapped = BotManager.wrapNewClient(
@@ -83,7 +84,6 @@ public class Main {
                                 ConfigManager.getCurrentConfig().getServerAddress(),
                                 ConfigManager.getCurrentConfig().getServerPort()),
                         ConfigManager.getCurrentConfig().getUsername(),
-                        ConfigManager.getCurrentConfig().getAccessToken(),
                         true);
             }
         }
